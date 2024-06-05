@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Data Sync</title>
+    <style>
+        .container {
+            max-width: 400px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            /* Center the contents */
+        }
+
+        .title {
+            margin-bottom: 20px;
+            /* Add some space between the title and the form */
+        }
+
+        .label {
+            display: block;
+            /* Make the labels block elements */
+            text-align: left;
+            /* Align the labels to the left */
+            margin-bottom: 10px;
+
+            font-weight: 500;
+            /* Add some space between the labels and the inputs */
+        }
+
+        input[type="date"] {
+            width: 94%;
+            /* Make the inputs full-width */
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="title">Manual Data Sync</h2>
+        <form id="sync-form" method="post" action="https://script.google.com/macros/s/AKfycbxbq_KMS_sUX_QTZ3H8JbgFCTwPOAV_pK9hXN-FOAMZbWLw-rRuds1UXpTkEGOc-cjV/exec">
+            <label for="from-date" class="label">Date Start:</label>
+            <input type="date" id="from-date" name="from-date" required><br><br>
+            <label for="to-date" class="label">Date End:</label>
+            <input type="date" id="to-date" name="to-date" required><br><br>
+            <button type="submit">Sync Data</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
